@@ -1,6 +1,8 @@
-import * as flsFunctions from "./modules/functions.js"
+import * as flsFunctions from "./modules/functions.js";
+import Swiper from "swiper";
 
 flsFunctions.isWebp();
+
 
 const breakpoints = {
     0: {
