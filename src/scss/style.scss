@@ -21,7 +21,6 @@ body {
     padding: 35px 0;
 }
 
-
 @media (min-width: 1024px) {
     .cards__grid {
         display: grid;
@@ -51,68 +50,72 @@ body {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
 
-    .card-img__wrapper {
-        overflow: hidden;
-        height: 300px;
-        object-fit: cover;
-        object-position: center;
-        border-radius: 12px;
-    }
+.card:hover {
+    transform: translateY(-5px);
+}
 
-    .card__img {
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-        transition: transform 0.3s;
-        border-radius: 12px;
-    }
+.card-img__wrapper {
+    overflow: hidden;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
 
-    .card:hover .card__img {
-        transform: scale(1.1) rotate(4deg);
-    }
+.card__img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s linear;
+    border-radius: 12px;
+}
 
-    .card__category {
-        display: flex;
-        justify-content: start;
-        align-items: end;
-    }
+.card:hover .card__img {
+    transform: scale(1.1) rotate(4deg);
+}
 
-    .card-category__icon {
-        max-width: 24px;
-        padding-right: 8px;
-    }
+.card__category {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
 
-    .card-category__icon path {
-        transition: fill 0.25s linear, stroke 0.25s linear;
-    }
+.card-category__icon {
+    max-width: 24px;
+    padding-right: 8px;
+}
 
-    .card:hover .card-category__icon path {
-        fill: rgb(159, 89, 90);
-        stroke: rgb(159, 89, 90);
-    }
+.card-category__icon path {
+    transition: fill 0.25s linear, stroke 0.25s linear;
+}
 
-    .card-category__name {
-        color: rgb(159, 89, 90);
-    }
+.card:hover .card-category__icon path {
+    fill: rgb(159, 89, 90);
+    stroke: rgb(159, 89, 90);
+}
 
-    .card__title {
-        font-weight: 600;
-        font-size: 32px;
-    }
+.card-category__name {
+    color: rgb(159, 89, 90);
+}
 
-    .card__text {
-        color: rgb(100, 100, 100);
-        font-size: 18px;
-    }
+.card__title {
+    font-weight: 600;
+    font-size: 32px;
+}
 
-    .card-date {
-        color: rgb(164, 164, 164);
-    }
+.card__text {
+    color: rgb(100, 100, 100);
+    font-size: 18px;
+}
+
+.card-date {
+    color: rgb(164, 164, 164);
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
     .card--none {
         display: none;
     }
-} 
+}
